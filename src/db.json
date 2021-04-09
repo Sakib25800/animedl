@@ -1,1 +1,23 @@
-{"watchlist":{"Boku no Hero Academia":{"currentEpisode":9,"totalEpisodes":13,"status":"watching","link":"https://www16.gogoanime.io/category/boku-no-hero-academia"},"Hunter X Hunter":{"currentEpisode":17,"totalEpisodes":62,"status":"watching","link":"https://www16.gogoanime.io/category/hunter-x-hunter"}}}
+// This is just a sample watchlist file 
+{
+    "watchlist": {
+        "Boku no Hero Academia": {
+            "currentEpisode": 9,
+            "totalEpisodes": 13,
+            "status": "watching",
+            "link": "https://www16.gogoanime.io/category/boku-no-hero-academia"
+        },
+        "Hunter X Hunter": {
+            "currentEpisode": 17,
+            "totalEpisodes": 62,
+            "status": "watching",
+            "link": "https://www16.gogoanime.io/category/hunter-x-hunter"
+        },
+        "Yakusoku no Neverland 2nd Season": {
+            "currentEpisode": 3,
+            "totalEpisodes": 12,
+            "status": "watching",
+            "link": "https://www16.gogoanime.io/category/yakusoku-no-neverland-2nd-season"
+        }
+    }
+}
