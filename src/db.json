@@ -1,0 +1,16 @@
+{
+    "watchlist": {
+        "Boku no Hero Academia": {
+            "currentEpisode": 9,
+            "totalEpisodes": 13,
+            "status": "watching",
+            "link": "https://www16.gogoanime.io/category/boku-no-hero-academia"
+        },
+        "Hunter X Hunter": {
+            "currentEpisode": 17,
+            "totalEpisodes": 62,
+            "status": "watching",
+            "link": "https://www16.gogoanime.io/category/hunter-x-hunter"
+        }
+    }
+}
