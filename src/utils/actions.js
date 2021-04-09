@@ -102,7 +102,7 @@ const watchlistAction = async (options, program) => {
         }
       } else if (command === "update") {
         const episodes = await getEpisodes(anime.link);
-        updateWatchlist({ ...anime, totalEpisodes: episodes.episodes.length, title });
+        updateWatchlist({ ...anime, totalEpisodes: episodes.episodes.length}, title);
       }
       command = (await inquirer.prompt(commandQuestion)).command;
     }
