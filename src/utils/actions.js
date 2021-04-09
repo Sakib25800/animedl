@@ -40,7 +40,7 @@ const watchlistAction = async (options, program) => {
     const episodes = (await getEpisodes(anime.link)).episodes;
     const commandQuestion = {
       name: "command",
-      message: "Press q to exit [q]: ",
+      message: "Available commands: set, update, download \nPress q to exit [q]: ",
     };
 
     process.stdout.write("\x1Bc");
@@ -100,6 +100,9 @@ const watchlistAction = async (options, program) => {
           process.stdout.write("\x1Bc");
           printEpisode({ ...anime, title });
         }
+      } else if (command === "update") {
+        const episodes = await getEpisodes(anime.link);
+        updateWatchlist({ ...anime, totalEpisodes: episodes.episodes.length });
       }
       command = (await inquirer.prompt(commandQuestion)).command;
     }
