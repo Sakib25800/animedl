@@ -55,7 +55,7 @@ const watchlistAction = async (options, program) => {
 
       if (downloadCom) {
         const amount = parseInt(downloadCom[0].split(" ")[1]);
-        if (anime.currentEpisode + amount > anime.totalEpisodes) {
+        if (anime.currentEpisode + (amount-1) > anime.totalEpisodes) {
           console.log(chalk.red("Episodes out of range"));
           return;
         }
