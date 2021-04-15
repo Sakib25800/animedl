@@ -86,7 +86,7 @@ const watchlistAction = async (options, program) => {
           console.log(chalk.red("Episodes out of range"));
         while (from <= to) {
           const episodeLink = await getLink(episodes[from - 1]);
-          const downloadName = `${title}-${from}.mp4`;
+          const downloadName = `${title}-episode-${from}.mp4`;
           download(episodeLink, downloadName, title);
           from++;
         }
@@ -139,7 +139,7 @@ const dlAction = async (name, output) => {
   );
   const episodeNum = episodeTitle.replace(digitReg, "");
   const episode = episodesObj.episodes[episodeNum - 1];
-  const downloadName = `${title}-${episodeNum}.mp4`;
+  const downloadName = `${title}-episode-${episodeNum}.mp4`;
   const link = await getLink(episode);
   download(link, downloadName, title, output ? output : undefined);
 };

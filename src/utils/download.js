@@ -4,7 +4,8 @@ const chalk = require("chalk");
 
 const download = (url, name, folderName, folderPath = "/mnt/c/Users/sakib/downloads") => {
   console.log(chalk.blueBright(`\nDownloading ${chalk.green(name)} to ${chalk.green(folderPath+'/'+folderName+'/'+name)} from ${chalk.gray(url)}`));
-  const command = `cd ${folderPath} && curl -o '${folderName}'/'${name}' --create-dirs ${url}`;
+
+  const command = `cd ${folderPath} && curl -o '${folderName}'/'${name}' --create-dirs ${url} && powershell.exe "New-BurntToastNotification -Text '${name} has finished downloading' "`;
   execSync(command, {stdio: 'inherit'});
 };
 
