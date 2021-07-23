@@ -1,37 +1,37 @@
 {
-    "name": "animedl",
-    "version": "1.0.0",
-    "description": "Anime downloader and watchlist tracker",
-    "main": "src/index.js",
-    "preferGlobal": true,
-    "bin": "src/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "pretty": "prettier --write src/*"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Sakib25800/animedl.git"
-    },
-    "author": "Sakibul Islam",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Sakib25800/animedl/issues"
-    },
-    "homepage": "https://github.com/Sakib25800/animedl#readme",
-    "dependencies": {
-        "chalk": "^4.1.0",
-        "cheerio": "^1.0.0-rc.5",
-        "commander": "^7.2.0",
-        "console-table-printer": "^2.8.2",
-        "inquirer": "^8.0.0",
-        "jsonfile": "^6.1.0",
-        "ora": "^5.4.0",
-        "puppeteer": "^8.0.0",
-        "superagent": "^6.1.0"
-    },
-    "devDependencies": {
-        "jsdoc": "^3.6.6",
-        "prettier": "^2.2.1"
-    }
+  "name": "animedl",
+  "version": "1.0.0",
+  "description": "Anime downloader and watchlist tracker",
+  "main": "src/index.js",
+  "preferGlobal": true,
+  "bin": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty": "prettier --write src/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sakib25800/animedl.git"
+  },
+  "author": "Sakibul Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sakib25800/animedl/issues"
+  },
+  "homepage": "https://github.com/Sakib25800/animedl#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "commander": "^7.2.0",
+    "console-table-printer": "^2.8.2",
+    "inquirer": "^8.0.0",
+    "jsonfile": "^6.1.0",
+    "ora": "^5.4.0",
+    "puppeteer": "^8.0.0",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.6",
+    "prettier": "^2.2.1"
+  }
 }
