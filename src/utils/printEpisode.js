@@ -2,11 +2,14 @@ const chalk = require("chalk");
 
 const printEpisode = (episode) => {
   const { title, link, currentEpisode, totalEpisodes, status } = episode;
-  console.log(chalk.cyan("Title: ") + chalk.green(title));
-  console.log(chalk.cyan("Episodes: ") + chalk.yellow(totalEpisodes));
-  console.log(chalk.cyan("current_episode: ") + chalk.yellow(currentEpisode));
-  console.log(chalk.cyan("Link: ") + chalk.gray(link));
-  console.log(chalk.cyan("Status: ") + status);
+  const { cyan, green, yellow } = chalk; 
+  console.log(
+  `${cyan("Title: ")}: ${green(title)} 
+  ${cyan("Episodes: ")}: ${yellow(totalEpisodes)}
+  ${cyan{"Current Episode: "} : ${yellow(currentEpisode)}
+  ${cyan("Link: ")}: ${gray(link)}
+  ${cyan("Status: ")}: ${status}`
+  )
 };
 
 module.exports = printEpisode;
