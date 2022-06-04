@@ -1,12 +1,16 @@
 const { execSync  } = require("child_process");
 const chalk = require("chalk");
-//  curl -o folder/file.png --create-dirs [URL] = command
+const folderPath = require("./constants")
 
-const download = (url, name, folderName, folderPath = "/mnt/c/Users/sakib/downloads") => {
-  console.log(chalk.blueBright(`\nDownloading ${chalk.green(name)} to ${chalk.green(folderPath+'/'+folderName+'/'+name)} from ${chalk.gray(url)}`));
+const download = (url, name, folderName) => {
+  const {blueBright, green, gray} = chalk; 
 
-  const command = `cd ${folderPath} && curl -o '${folderName}'/'${name}' --create-dirs ${url} && powershell.exe "New-BurntToastNotification -Text '${name} has finished downloading' "`;
-  execSync(command, {stdio: 'inherit'});
+  console.log(blueBright(`\nDownloading ${green(name)} to ${green(folderPath + '/' + folderName + '/' + name)} from ${gray(url)}`));
+
+  execSync(
+    `cd ${folderPath} && curl -o '${folderName}'/'${name}' --create-dirs ${url} && powershell.exe "New-BurntToastNotification -Text '${name} has finished downloading' "`, 
+    {stdio: 'inherit'}
+  );
 };
 
 module.exports = download;
